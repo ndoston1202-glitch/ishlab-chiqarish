@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zavod boshqaruvi</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏭</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Kirish oynasi (parol o'rnatilgan bo'lsa) -->
+  <div id="login" class="login hidden">
+    <form id="login-form" class="login-box">
+      <div class="login-icon">🏭</div>
+      <h1 id="login-title">Zavod boshqaruvi</h1>
+      <p class="muted">Davom etish uchun parolni kiriting</p>
+      <input id="login-pass" type="password" placeholder="Parol" autocomplete="current-password" required>
+      <div id="login-err" class="form-error"></div>
+      <button class="btn primary block" type="submit">Kirish</button>
+    </form>
+  </div>
+
+  <div id="app" class="layout hidden">
+    <aside id="sidebar" class="sidebar">
+      <div class="brand">
+        <span class="brand-icon">🏭</span>
+        <div>
+          <div class="brand-name" id="brand-name"></div>
+          <div class="brand-sub">Ishlab chiqarish boshqaruvi</div>
+        </div>
+      </div>
+      <nav id="nav" class="nav"></nav>
+      <div class="sidebar-foot" id="sidebar-foot"></div>
+    </aside>
+    <div class="backdrop" id="backdrop"></div>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menu-btn" aria-label="Menyu">☰</button>
+        <h1 id="page-title"></h1>
+        <div class="topbar-actions" id="topbar-actions"></div>
+      </header>
+      <div id="content" class="content"></div>
+    </main>
+  </div>
+
+  <div id="modal" class="modal"></div>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  <script src="js/core.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/demo.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
